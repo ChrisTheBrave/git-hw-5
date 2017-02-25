@@ -90,20 +90,45 @@
             <fieldset>
               <legend>Item Details</legend>
             <aside>
-
-              
-
-
+              <label for='item-type'>Item Type</label>
+              <select class='form-control' name='item-type' id='item-type'>
+                <option>Awesome Widget</option>
+                <option>Dope Widget</option>
+                <option>Lit Widget</option>
+                <option>Swaggy Widget</option>
+                <option>Trippy Widget</option>
+              </select>
             </aside>
+            <aside>
+              <label for='quatity'>Quantity</label>
+              <input type='number' name='quantity' id='quatity' min='1' max='7' placeholder='4'>
+            </aside>
+            <aside>
 
-
-
-
-
-
+              <label for='gift-wrap'>Gift Wrap</label>
+              <input type='radio' name='yes' value'yes'>
+              Yes
+              <input type='radio' name='no' value'no'>
+              No
+            </aside>
 
             </fieldset>
 
+            <fieldset>
+              <legend>Your Info</legend>
+                <aside>
+                  <label for='fullname-input'>Full Name</label>
+                  <input type='text' name='fullname' id='fullname-input' placeholder='Yo Momma'>
+                </aside>
+                <aside>
+                  <label for='email'>Email Address</label>
+                  <input type='email' name='email' id='email' placeholder='widgety@widgets.com'>
+                </aside>
+                <aside>
+                  <label for='credit-card'>Credit Card</label>
+                  <input type='number' name='credit-card' id='credit-card' placeholder='xxxx-xxxx-xxxx-xxxx'>
+                </aside>
+            </fieldset>
 
 
       </section>
