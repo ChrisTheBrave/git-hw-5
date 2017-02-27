@@ -13,17 +13,17 @@
     <header>
       <h1>Widget Co</h1>
         <nav>
-                  <ul>
-                      <li><a href='#'>Home</a></li>
-                      <li><a href='#'>About Us</a></li>
-                      <li><a href='#'>Our Widgets</a></li>
-                      <li><a href='#'>Place Order</a></li>
-                  </ul>
-              </nav>
+          <ul>
+              <li><a href='#'>Home</a></li>
+              <li><a href='#'>About Us</a></li>
+              <li><a href='#'>Our Widgets</a></li>
+              <li><a href='#'>Place Order</a></li>
+          </ul>
+      </nav>
     <section class='info'>
       <h2>The Best Widgets</h2>
         <p>We have the best widgets. They're amazing. You'll love them.</p>
-        <p>Place Your Order Now!</p>
+        <button type='button' class='btn btn-success'>Place Your Order Now!</button>
       </section>
     </header>
 
@@ -36,12 +36,12 @@
       <section>
         <h2>Meet The Team</h2>
           <aside>
-            <img class='t-shirt' src='blue-front.png'>
-            <img class='t-shirt' src='blue-front.png'>
-            <img class='t-shirt' src='blue-front.png'>
-            <img class='t-shirt' src='blue-front.png'>
-            <img class='t-shirt' src='blue-front.png'>
-            <img class='t-shirt' src='blue-front.png'>
+            <img class='t-shirt' src='cat.jpeg'>
+            <img class='t-shirt' src='cat.jpeg'>
+            <img class='t-shirt' src='cat.jpeg'>
+            <img class='t-shirt' src='cat.jpeg'>
+            <img class='t-shirt' src='cat.jpeg'>
+            <img class='t-shirt' src='cat.jpeg'>
           </aside>
           <span>
             <a><i class='top'>go to top</i><a>
@@ -52,8 +52,8 @@
       <section>
 
         <h3>Our Widgets</h3>
-          <p>Below are all of our amazing widgets. You're going to love them. We have the best widgets. Be sure to look through all of the widgetsand select your favorites. Thenyou can order them using the form below.</p>
-          <p>New widgets being added all the time!</p>
+          <p>Below are all of our amazing widgets. You're going to love them. We have the best widgets. Be sure to look through all of the widgets and select your favorites. Then you can order them using the form below.</p>
+          <p class="bg-warning">New widgets being added all the time!</p>
 
           <ul>
             <li><a href='#' class='glyphicon glyphicon-headphones'></a></li>
@@ -65,21 +65,20 @@
           </ul>
 
       </section>
-      <section>
-        <nav>
-          <ul>
-            <li><a href='#'><<</a></li>
-            <li><a href='#'>1</a></li>
-            <li><a href='#'>2</a></li>
-            <li><a href='#'>3</a></li>
-            <li><a href='#'>4</a></li>
-            <li><a href='#'>5</a></li>
-            <li><a href='#'>6</a></li>
-            <li><a href='#'>>></a></li>
 
-          </ul>
-        </nav>
+      <section class='btn-toolbar' role="toolbar" aria-label="...">
+
+        <a class="btn btn-defaul" href="#" role="button"><<</a>
+        <a class="btn btn-default" href="#" role="button">1</a>
+        <a class="btn btn-default" href="#" role="button">2</a>
+        <a class="btn btn-default" href="#" role="button">3</a>
+        <a class="btn btn-default" href="#" role="button">4</a>
+        <a class="btn btn-default" href="#" role="button">5</a>
+        <a class="btn btn-default" href="#" role="button">6</a>
+        <a class="btn btn-default" href="#" role="button">>></a>
+
       </section>
+
 
       <span>
         <a><i class='top'>go to top</i><a>
@@ -92,7 +91,7 @@
           <form action='http://requestb.in/19qx3id1' method='POST'>
             <fieldset>
               <legend>Item Details</legend>
-            <aside>
+            <aside class='form-group'>
               <label for='item-type'>Item Type</label>
               <select class='form-control' name='item-type' id='item-type'>
                 <option>Awesome Widget</option>
@@ -102,16 +101,17 @@
                 <option>Trippy Widget</option>
               </select>
             </aside>
-            <aside>
+
+            <aside class='form-control'>
               <label for='quatity'>Quantity</label>
               <input type='number' name='quantity' id='quatity' min='1' max='7' placeholder='4'>
             </aside>
-            <aside>
 
+            <aside class='form-control'>
               <label for='gift-wrap'>Gift Wrap</label>
-              <input type='radio' name='yes' value'yes'>
+              <input type='radio' name='optionsRadios' id='optionsRadios1' value'option1'>
               Yes
-              <input type='radio' name='no' value'no'>
+              <input type='radio' name='optionsRadios' id='optionsRadios2' value'option2'>
               No
             </aside>
 
@@ -121,18 +121,31 @@
               <legend>Your Info</legend>
                 <aside>
                   <label for='fullname-input'>Full Name</label>
-                  <input type='text' name='fullname' id='fullname-input' placeholder='Yo Momma'>
+                  <input type='text' class='form-control' name='fullname' id='fullname-input' placeholder='Yo Momma'>
                 </aside>
+
                 <aside>
                   <label for='email'>Email Address</label>
-                  <input type='email' name='email' id='email' placeholder='widgety@widgets.com'>
+                  <input type='email' class='form-control' name='email' id='email' placeholder='widgety@widgets.com'>
                 </aside>
+
                 <aside>
                   <label for='credit-card'>Credit Card</label>
-                  <input type='text' name='credit-card' id='credit-card' placeholder='xxxx-xxxx-xxxx-xxxx'>
+                  <input type='text' class='form-control' name='credit-card' id='credit-card' placeholder='xxxx-xxxx-xxxx-xxxx'>
                 </aside>
+
+                <aside>
+
+                  <label for='expiration'>Expiration</label>
+                  <input type='month' class='form-control' name='expiration' id='expiration' placeholder='January 2017'>
+
+                </aside>
+
             </fieldset>
         </form>
+
+        <button type='button' class='btn btn-success'>Confirm Order</button>
+
       </section>
 
       <span>
